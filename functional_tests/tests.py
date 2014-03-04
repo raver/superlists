@@ -101,7 +101,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertAlmostEqual(
                 inputbox.location['x'] + inputbox.size['width'] / 2,
                 512,
-                delta = 5
+                delta = 10
                 )
 
         inputbox.send_keys('testing\n')
@@ -109,6 +109,6 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertAlmostEqual(
             inputbox.location['x'] + inputbox.size['width'] / 2,
             512,
-            delta=5
+            delta=10
         )
 
